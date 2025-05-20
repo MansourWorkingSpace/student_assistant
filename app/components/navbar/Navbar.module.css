@@ -1,0 +1,88 @@
+.navbar {
+    background-color: var(--soft-beige);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--dark-red);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-red);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: var(--dark-red);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links .login-button {
+    background-color: var(--bright-red);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .nav-links .login-button:hover {
+    background-color: var(--dark-red);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      display: flex;
+      width: 100%; /* Full width for links */
+      margin-top: 1rem;
+    }
+  
+    .nav-links a {
+      font-size: 1.2rem; /* Increase size for readability */
+      width: 100%; /* Make the links full-width */
+      text-align: left; /* Align text to the left */
+      padding: 0.8rem 0;
+    }
+  
+    .nav-links .login-button {
+      width: 100%; /* Make the button full-width */
+      text-align: center;
+    }
+  
+    .logo {
+        margin: auto;
+    }
+  }
+  

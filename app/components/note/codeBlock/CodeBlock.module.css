@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  background-color: #2d2d2d;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.codeBlock {
+  font-size: 14px;
+  border: 1px solid #333;
+  border-top: none;
+  width: 100%;
+}
+
+.selectLanguage {
+  background-color: #2d2d2d;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  height: 20px;
+}
+
+.selectLanguage:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.copyButton:focus {
+  outline: none;
+}
+.removeBtn {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1; /* Ensures the remove button is on top */
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+

@@ -1,0 +1,63 @@
+.container {
+    padding: 2rem;
+    background-color: var(--soft-beige);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headerContainer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-red);
+  }
+  
+  .description {
+    color: var(--dark-red);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .summaryCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .income {
+    background-color: var(--light-cream);
+    border-left: 5px solid var(--bright-red);
+  }
+  
+  .expense {
+    background-color: var(--light-cream);
+    border-left: 5px solid var(--dark-red);
+  }
+  
+  .balance {
+    background-color: var(--light-cream);
+    border-left: 5px solid var(--soft-beige);
+  }
+  
